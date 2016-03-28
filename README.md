@@ -2,4 +2,6 @@ ASQ Application is dedicated to helping quality professionals achieve their care
 
 ASQ Exam Prep was formed out of a graduate university program at International Technological University in San Jose, CA.
 
+TRY IT : http://asq-app.herokuapp.com/
+
 If you have any recommendations on how to improve it please contact us at bigbangASQ@itu.edu.
