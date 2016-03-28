@@ -1,5 +1,5 @@
 process.env.port = 8080
-mongodb.connect.url = mongodb://localhost:27017/Quiz
+mongodb.connect.url = mongodb://ds025449.mlab.com:25449/heroku_7d9nm4j8
 model.ep = epmodels
 model.gk = gkmodels
 model.sqm = sqmmodels
