@@ -31,8 +31,9 @@ app.use(express.static(__dirname + '/views'));
 //Updated by Srinivas Thungathurti for moving hardcode port value to property file.
 //mongoose.connect('mongodb://localhost:27017/Quiz');
 var mongodbUrl = properties.get('mongodb.connect.url');
+console.log("mongoDB URL is "+mongodbUrl);
 mongoose.connect(mongodbUrl);
-
+console.log("Connection established with mongoDB.");
 // models
 var userModel = require('./models/userModel.js');
 var questionModel = require('./models/questionModel.js');
