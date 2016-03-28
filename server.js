@@ -33,7 +33,12 @@ app.use(express.static(__dirname + '/views'));
 var mongodbUrl = properties.get('mongodb.connect.url');
 console.log("mongoDB URL is "+mongodbUrl);
 mongoose.connect(mongodbUrl);
-console.log("Connection established with mongoDB.");
+var conn = mongoose.connection;
+conn.on('error', console.error.bind(console, 'connection error:'));
+conn.once('open', function() {
+  console.log("Connection established with mongoDB.");                     
+});
+
 // models
 var userModel = require('./models/userModel.js');
 var questionModel = require('./models/questionModel.js');
