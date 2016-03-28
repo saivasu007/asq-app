@@ -1,5 +1,5 @@
 process.env.port = 8080
-mongodb.connect.url = mongodb://thungasr:itu@2016@ds025449.mlab.com:25449/heroku_7d9nm4j8
+mongodb.connect.url = mongodb://thungasr:itu2016@ds025449.mlab.com:25449/heroku_7d9nm4j8
 model.ep = epmodels
 model.gk = gkmodels
 model.sqm = sqmmodels
